@@ -1,4 +1,6 @@
 import random
+import pprint
+
 def main():
     people = [('Alice', random.randint(20, 30), 'New York'),
          ('Bob', random.randint(20, 30), 'Philadelphia'),
@@ -6,7 +8,7 @@ def main():
          ('Dylan', random.randint(20, 30), 'Los Angeles'),
          ('Emily', random.randint(20, 30), 'Dallas'),
         ]
-    print(people)
+    pprint.pprint(people)
 
     with open('index.html', mode='w', encoding='utf-8') as f:
         f.write("<!DOCTYPE html>")
