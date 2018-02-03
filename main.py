@@ -1,12 +1,12 @@
 
 def main():
-    a = [('Alice', 20, 'New York'),
+    people = [('Alice', 20, 'New York'),
          ('Bob', 22, 'Philadelphia'),
          ('Charlotte', 24, 'London'),
          ('Dylan', 21, 'Los Angeles'),
          ('Emily', 23, 'Dallas'),
         ]
-    print(a)
+    print(people)
 
     with open('index.html', mode='w', encoding='utf-8') as f:
         f.write("<html>")
@@ -14,7 +14,14 @@ def main():
         f.write("<title>My Report</title>")
         f.write("</head>")
         f.write("<body>")
-        f.write("<p> This is a sample text</p>")
+
+        f.write("<table>")
+        for p in people:
+            f.write("<tr>")
+            f.write("<td>{}</td> <td>{}</td> <td>{}</td>".format(p[0], p[1], p[2]))
+            f.write("</tr>")
+        f.write("</table>")
+        
         f.write("</body>")
 
     print("Report created as index.html")
