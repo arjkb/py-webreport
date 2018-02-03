@@ -1,10 +1,10 @@
-
+import random
 def main():
-    people = [('Alice', 20, 'New York'),
-         ('Bob', 22, 'Philadelphia'),
-         ('Charlotte', 24, 'London'),
-         ('Dylan', 21, 'Los Angeles'),
-         ('Emily', 23, 'Dallas'),
+    people = [('Alice', random.randint(20, 30), 'New York'),
+         ('Bob', random.randint(20, 30), 'Philadelphia'),
+         ('Charlotte', random.randint(20, 30), 'London'),
+         ('Dylan', random.randint(20, 30), 'Los Angeles'),
+         ('Emily', random.randint(20, 30), 'Dallas'),
         ]
     print(people)
 
