@@ -21,7 +21,7 @@ def main():
         f.write("<table>")
         for p in people:
             f.write("<tr>")
-            f.write("<td>{}</td> <td>{}</td> <td>{}</td>".format(p[0], p[1], p[2]))
+            f.write("<td>{0}</td> <td>{1}</td> <td><a href='{3}' target='_blank'>{2}</a></td>".format(p[0], p[1], p[2], p[3]))
             f.write("</tr>")
         f.write("</table>")
 
