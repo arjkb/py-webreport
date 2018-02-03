@@ -1,5 +1,6 @@
 import random
 import pprint
+import os
 
 def main():
     people = [('Alice', random.randint(20, 30), 'New York'),
@@ -28,7 +29,7 @@ def main():
         f.write("</body>")
         f.write("</html>")
 
-    print("Report created as index.html")
+    print("Report created at {}/index.html".format(os.getcwd()))
 
 if __name__ == '__main__':
     main()
