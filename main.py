@@ -9,6 +9,7 @@ def main():
     print(people)
 
     with open('index.html', mode='w', encoding='utf-8') as f:
+        f.write("<!DOCTYPE html>")
         f.write("<html>")
         f.write("<head>")
         f.write("<title>My Report</title>")
@@ -21,8 +22,9 @@ def main():
             f.write("<td>{}</td> <td>{}</td> <td>{}</td>".format(p[0], p[1], p[2]))
             f.write("</tr>")
         f.write("</table>")
-        
+
         f.write("</body>")
+        f.write("</html>")
 
     print("Report created as index.html")
 
