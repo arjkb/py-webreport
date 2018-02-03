@@ -2,11 +2,11 @@ import pprint
 import os
 
 def main():
-    people = [('Alice', 27, 'New York'),
-         ('Bob', 26, 'Philadelphia'),
-         ('Charlotte', 25, 'London'),
-         ('Dylan', 24, 'Los Angeles'),
-         ('Emily', 23, 'Dallas'),
+    people = [('Alice', 27, 'New York', 'https://en.wikipedia.org/wiki/New_York'),
+         ('Bob', 26, 'Paris', 'https://en.wikipedia.org/wiki/Paris'),
+         ('Charlotte', 25, 'Singapore', 'https://en.wikipedia.org/wiki/Singapore'),
+         ('Dylan', 24, 'Dubai', 'https://en.wikipedia.org/wiki/Dubai'),
+         ('Emily', 23, 'New Delhi', 'https://en.wikipedia.org/wiki/New_Delhi'),
         ]
     pprint.pprint(people)
 
