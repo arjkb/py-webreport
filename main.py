@@ -1,13 +1,12 @@
-import random
 import pprint
 import os
 
 def main():
-    people = [('Alice', random.randint(20, 30), 'New York'),
-         ('Bob', random.randint(20, 30), 'Philadelphia'),
-         ('Charlotte', random.randint(20, 30), 'London'),
-         ('Dylan', random.randint(20, 30), 'Los Angeles'),
-         ('Emily', random.randint(20, 30), 'Dallas'),
+    people = [('Alice', 27, 'New York'),
+         ('Bob', 26, 'Philadelphia'),
+         ('Charlotte', 25, 'London'),
+         ('Dylan', 24, 'Los Angeles'),
+         ('Emily', 23, 'Dallas'),
         ]
     pprint.pprint(people)
 
